@@ -1,0 +1,135 @@
+{"amt":"1000000","bankCd":"CENA","billingNm":"John Doe","currency":"IDR","description":"","goodsNm":"Test Transaction Nicepay","mitraCd":"","payMethod":"02","payNo":"","payValidDt":"","payValidTm":"","paymentExpDt":"","paymentExpTm":"","qrContent":"","qrUrl":"","referenceNo":"AGUNG-20220412122826","requestURL":"","resultCd":"0000","resultMsg":"SUCCESS","tXid":"IONPAYTEST02202204121228224929","transDt":"20220412","transTm":"122822","vacctNo":"44779000091228224929","vacctValidDt":"20220414","vacctValidTm":"122822"}
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 5.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<script type="text/javascript" src="/nicepay/js/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="/nicepay/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/nicepay/css/bootstrap_backup.css" />
+<link rel="stylesheet" type="text/css" href="/nicepay/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/nicepay/css/form.css" />
+<link rel="stylesheet" type="text/css" href="/nicepay/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="/nicepay/css/basic.css" />
+
+<link rel="shortcut icon" href="https://www.nicepay.co.id/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="https://www.nicepay.co.id/favicon.ico" type="image/x-icon" />
+
+<script type="text/javascript" src="/nicepay/js/jquery.js"></script>
+<script type="text/javascript" src="/nicepay/js/jquery.min.js"></script>
+<script type="text/javascript" src="/nicepay/js/common.js"></script>
+
+
+</head>
+
+<body >
+	
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<script type = "text/javascript">
+	function setAcsInfo(){
+		if ('' != '05') {
+			document.tranMgr.action = $("#callbackUrl").val();
+		} else if ('' == '05' && '' != null && '' == 'OVOE') {
+			document.tranMgr.action = $("#callbackUrl").val();
+		}
+		
+		if (document.tranMgr.cardBrand.value == null || document.tranMgr.cardBrand.value == "")
+			document.tranMgr.cardBrand.setAttribute("disabled", true);
+		
+		document.tranMgr.submit();
+	}
+
+</script>
+</head>
+<style>
+body {
+    min-width: 100%;
+    height:auto;
+min-height: 500px;
+overflow: none;
+border: none;
+background: url("/nicepay/images/rotate.gif") no-repeat center;
+}
+</style>
+<body onLoad="javascript:setAcsInfo();">
+
+	
+	
+		<form name="tranMgr" method="post" action="">
+			<input type="hidden" id="callbackUrl"  value="https://pluto.nicepay.co.id/result">
+			<input type="hidden" name="resultCd"  value="">
+			<input type="hidden" name="resultMsg" value="">
+			<input type="hidden" name="tXid" value="">
+			<input type="hidden" name="referenceNo" value="">
+			<input type="hidden" name="payMethod" value="">
+			<input type="hidden" name="amt" value="">
+			<input type="hidden" name="transDt" value="">
+			<input type="hidden" name="transTm" value="">
+			<input type="hidden" name="description" value="">
+			<input type="hidden" name="authNo" value="">
+			<input type="hidden" name="issuBankCd" value="">
+			<input type="hidden" name="acquBankCd" value="">
+			<input type="hidden" name="cardNo" value="">
+			<input type="hidden" name="receiptCode" value="">
+			<input type="hidden" name="mitraCd" value="">
+			<input type="hidden" name="recurringToken" value="">
+			<input type="hidden" name="preauthToken" value="">
+			
+			<input type="hidden" name="currency" value="">
+			<input type="hidden" name="goodsNm" value="">
+			<input type="hidden" name="billingNm" value="">
+			<input type="hidden" name="ccTransType" value="">
+			<input type="hidden" name="mRefNo" value="">
+			
+			<input type="hidden" name="instmntType" value="">
+			<input type="hidden" name="instmntMon" value="">
+			
+			<input type="hidden" name="cardExpYymm" value="">
+			
+			<input type="hidden" name="issuBankNm" value="">
+			<input type="hidden" name="acquBankNm" value="">
+
+			<input type="hidden" name="timeStamp" value="">
+			<input type="hidden" name="merchantToken" value="">
+			<input type="hidden" name="cardBrand" value="">
+			
+			
+			
+		</form>
+	
+
+	
+</body>
+</html>
+</body>
+
+</html>
+{"acquBankCd":"","acquBankNm":"","acquStatus":"","amt":"1000000","bankCd":"CENA","billingNm":"John Doe","cancelAmt":"","cancelTrxSn":"","cardExpYymm":"","cardNo":"","ccTransType":"","currency":"IDR","depositDt":"20220412","depositTm":"122905","goodsNm":"Test Transaction Nicepay","iMid":"IONPAYTEST","instmntMon":"1","instmntType":"2","issuBankCd":"","issuBankNm":"","mRefNo":"","mitraCd":"","payMethod":"02","payNo":"","payValidDt":"","payValidTm":"","paymentExpDt":"","paymentExpTm":"","paymentTrxSn":"","preauthToken":"","receiptCode":"","recurringToken":"","referenceNo":"AGUNG-20220412122826","reqDt":"20220412","reqTm":"122822","resultCd":"0000","resultMsg":"paid","shopId":"","status":"0","tXid":"IONPAYTEST02202204121228224929","transDt":"20220412","transTm":"122822","userId":"","vacctNo":"44779000091228224929","vacctValidDt":"20220414","vacctValidTm":"122822"}
+{"amt":"","bankCd":"","billingNm":"","currency":"","description":"","goodsNm":"","mitraCd":"","payMethod":"","payNo":"","payValidDt":"","payValidTm":"","paymentExpDt":"","paymentExpTm":"","qrContent":"","qrUrl":"","referenceNo":"","requestURL":"","resultCd":"8001","resultMsg":"Order registration error.","tXid":"","transDt":"","transTm":"","vacctNo":"","vacctValidDt":"","vacctValidTm":""}
